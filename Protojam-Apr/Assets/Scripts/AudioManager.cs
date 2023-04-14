@@ -11,8 +11,7 @@ using UnityEngine;
 /// </summary>
 public class AudioManager : MonoSingleton<AudioManager>
 {
-    [SerializeField] private AudioClipsScriptableObject audioClips;
-
+    [SerializeField] private BGMClipsScriptableObject bgmClips;
     [SerializeField] private AudioSource bgmSource;
     [SerializeField] private BGMType currentBGMClip = BGMType.None;
     public float BGMVolume
@@ -21,6 +20,7 @@ public class AudioManager : MonoSingleton<AudioManager>
         set => bgmSource.volume = value;
     }
 
+    [SerializeField] private SFXClipsScriptableObject sfxClips;
     [SerializeField] private AudioSource sfxSource;
     public float SFXVolume
     {
@@ -32,7 +32,7 @@ public class AudioManager : MonoSingleton<AudioManager>
     {
         if (type == BGMType.None) return;
 
-        bgmSource.clip = audioClips.bgmClips[type];
+        bgmSource.clip = bgmClips.list[type];
         bgmSource.Play();
 
         currentBGMClip = type;
@@ -49,13 +49,14 @@ public class AudioManager : MonoSingleton<AudioManager>
     {
         if (type == SFXType.None) return;
 
+        var clip = sfxClips.list[type];
         if (oneShot)
         {
-            sfxSource.PlayOneShot(audioClips.sfxClips[type]);
+            sfxSource.PlayOneShot(clip);
         }
         else if (!sfxSource.isPlaying)
         {
-            sfxSource.clip = audioClips.sfxClips[type];
+            sfxSource.clip = clip;
             sfxSource.Play();
         }
     }
