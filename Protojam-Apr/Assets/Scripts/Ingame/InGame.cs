@@ -5,6 +5,7 @@ public class InGame : MonoSingleton<InGame>
 {
     [SerializeField] private Battle battle;
     [SerializeField] private Map map;
+    [SerializeField] private InputHandler inputHandler;
 
     public Battle Battle => battle;
     public Map Map => map;
@@ -25,6 +26,7 @@ public class InGame : MonoSingleton<InGame>
     {
         Battle.SetBattle();
         Map.SetCave();
+        inputHandler.Init();
 
         yield return new WaitForSeconds(0);
 
@@ -43,6 +45,7 @@ public class InGame : MonoSingleton<InGame>
     {
         battle.EndBattle();
         map.DestroyMap();
+        inputHandler.Dispose();
         
         yield return new WaitForSeconds(0);        
     }

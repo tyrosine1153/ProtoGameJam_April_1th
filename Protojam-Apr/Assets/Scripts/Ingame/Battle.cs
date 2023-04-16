@@ -8,9 +8,9 @@ public class Battle : MonoBehaviour
 
     private void Awake()
     {
-        Player.Hp.Subscribe(value => { if (value < Entity.MinHp) Player.Die(); });
+        Player.Hp.Subscribe(value => { });
         Player.CanPlay.Subscribe(value => {if (!value) InGame.Instance.GameEnd(false); });
-        Monster.Hp.Subscribe(value => { if (value < Entity.MinHp) Monster.Die(); });
+        Monster.Hp.Subscribe(value => { });
         Monster.CanPlay.Subscribe(value => { if (!value) InGame.Instance.GameEnd(true); });
     }
 

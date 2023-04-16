@@ -2,13 +2,14 @@ using UniRx;
 
 public abstract class Entity
 {
+    private const int MinHp = 0;
+    private readonly int maxHp;
+
     protected readonly BoolReactiveProperty canPlay;
     protected readonly IntReactiveProperty hp;
     protected readonly int attack;
     public IReadOnlyReactiveProperty<bool> CanPlay => canPlay;
     public IReadOnlyReactiveProperty<int> Hp => hp;
-    public const int MinHp = 0;
-    public int maxHp { get; }
 
     protected Entity(int maxHp, int attack)
     {
@@ -18,12 +19,23 @@ public abstract class Entity
         this.attack = attack;
     }
 
-    public void Attack(Entity target)
+    public virtual void Attack(Entity target)
     {
-        target.hp.Value -= attack;
+        target.Damage(attack);
     }
-    
-    public void Die()
+
+    private void Damage(int damage)
+    {
+        hp.Value -= damage;
+
+        if (hp.Value <= MinHp)
+        {
+            hp.Value = MinHp;
+            Die();
+        }
+    }
+
+    private void Die()
     {
         canPlay.Value = false;
     }
