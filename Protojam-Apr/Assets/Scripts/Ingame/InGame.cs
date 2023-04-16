@@ -1,0 +1,49 @@
+using System.Collections;
+using UnityEngine;
+
+public class InGame : MonoSingleton<InGame>
+{
+    [SerializeField] private Battle battle;
+    [SerializeField] private Map map;
+
+    public Battle Battle => battle;
+    public Map Map => map;
+
+    private bool isGamePlaying;
+
+    public void GameStart()
+    {
+        if (isGamePlaying) return;
+        isGamePlaying = true;
+
+        // Todo : 연출
+
+        StartCoroutine(CoStart());
+    }
+
+    private IEnumerator CoStart()
+    {
+        Battle.SetBattle();
+        Map.SetCave();
+
+        yield return new WaitForSeconds(0);
+
+        battle.StartBattle();
+    }
+
+    public void GameEnd(bool isWin)
+    {
+        if (!isGamePlaying) return;
+        isGamePlaying = false;
+        
+        StartCoroutine(CoGameEnd(isWin));
+    }
+    
+    private IEnumerator CoGameEnd(bool isWin)
+    {
+        battle.EndBattle();
+        map.DestroyMap();
+        
+        yield return new WaitForSeconds(0);        
+    }
+}
