@@ -5,17 +5,26 @@ using UnityEngine;
 public class PlayerBehaviour : StateMachineBehaviour
 {
     [SerializeField]
-    string ParameterSpeed;
-    public int ID_Speed { get; private set; }
+    string ParameterX;
+    public int ID_X { get; private set; }
+    [SerializeField]
+    string ParameterY;
+    public int ID_Y{ get; private set; }
     
     [SerializeField]
     string ParameterShoot;
     public int ID_Shoot { get; private set; }
+    
+    [SerializeField]
+    string ParameterRoll;
+    public int ID_Roll { get; private set; }
 
     public void Init()
     {
-        ID_Speed = Animator.StringToHash(ParameterSpeed);
+        ID_X = Animator.StringToHash(ParameterX);
+        ID_Y = Animator.StringToHash(ParameterY);
         ID_Shoot = Animator.StringToHash(ParameterShoot);
+        ID_Roll = Animator.StringToHash(ParameterRoll);
     }
 
     // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
