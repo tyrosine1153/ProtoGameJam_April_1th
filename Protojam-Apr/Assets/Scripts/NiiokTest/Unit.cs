@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
-public class Unit : MonoBehaviour
+public class Unit : Vulnerable
 {
     [SerializeField]
     protected float speed;
@@ -20,6 +20,7 @@ public class Unit : MonoBehaviour
         transform.Translate(speed * inVector);
         animator.SetInteger(StringRef.Instance.ID_X, Mathf.CeilToInt(Mathf.Abs(inVector.x)) * (int)Mathf.Sign(inVector.x));
         animator.SetInteger(StringRef.Instance.ID_Y, Mathf.CeilToInt(Mathf.Abs(inVector.y)) * (int)Mathf.Sign(inVector.y));
+        animator.SetBool(StringRef.Instance.ID_SideMoving, Mathf.Abs(inVector.x) > Mathf.Abs(inVector.y));
         if (inVector.x != 0)
         {
             // sprites are left oriented
@@ -27,9 +28,23 @@ public class Unit : MonoBehaviour
         }
     }
 
+    public override void TakeDamage(float InDamage)
+    {
+        base.TakeDamage(InDamage);
+
+        animator.SetTrigger(StringRef.Instance.ID_Hurt);
+    }
+
+
+    protected override void Die()
+    {
+        base.Die();
+
+        animator.SetTrigger(StringRef.Instance.ID_Die);
+    }
 
     // Start is called before the first frame update
-    void Start()
+    virtual protected void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();

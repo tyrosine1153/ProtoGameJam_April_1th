@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5218879788984552583}
   m_Layer: 0
   m_Name: DragonProto
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a296131298203144bad074d3554464a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  maxHp: 100
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+  speed: 2
 --- !u!212 &4251325495893593982
 SpriteRenderer:
   m_ObjectHideFlags: 0

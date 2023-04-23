@@ -8,11 +8,17 @@ public class PlayerProto : Unit
     [SerializeField]
     float rollScale;
 
+    [SerializeField]
+    GameObject bulletPrefab;
+
     Vector2 inputVector;
+    Vector2 reservedShoot;
+
+    Collider2D bodyCollider;
 
     public void Shoot(Vector2 inVector)
     {
-        // generate projectile
+        reservedShoot = inVector;
         animator.SetTrigger(StringRef.Instance.ID_Shoot);
     }
 
@@ -24,8 +30,11 @@ public class PlayerProto : Unit
 
 
 
-    private void Awake()
+    override protected void Awake()
     {
+        base.Awake();
+
+        bodyCollider = GetComponent<Collider2D>();
         GameManager.Instance.Player = this;
     }
 
@@ -33,23 +42,36 @@ public class PlayerProto : Unit
     void Update()
     {
         // input test
-
-        inputVector = new Vector2(Input.GetAxisRaw(StringRef.Horizontal), Input.GetAxisRaw(StringRef.Vertical));
-        
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (CurrentHp > 0)
         {
-            Roll(inputVector);
-        }
+            inputVector = new Vector2(Input.GetAxisRaw(StringRef.Horizontal), Input.GetAxisRaw(StringRef.Vertical));
 
-        if(Input.GetMouseButtonDown(0))
-        {
-            Shoot(Vector2.zero);
+            if (Input.GetMouseButtonDown(1))
+            {
+                Roll(inputVector);
+            }
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                Shoot(GameManager.Instance.GetMousePosition() - new Vector2(transform.position.x, transform.position.y));
+            }
+            //Debug.Log($"{inputVector}");
         }
-        //Debug.Log($"{inputVector}");
     }
 
     void FixedUpdate()
     {
         Move(inputVector.normalized * Time.fixedDeltaTime);
     }
+
+    // used by animation event
+    void ShootReservedBullet()
+    {
+        Bullet bullet = GameObject.Instantiate(bulletPrefab, transform.position, transform.rotation).GetComponent<Bullet>();
+        Physics2D.IgnoreCollision(bodyCollider, bullet.GetComponent<Collider2D>());
+
+        bullet.Direction = reservedShoot;
+    }
+
+
 }

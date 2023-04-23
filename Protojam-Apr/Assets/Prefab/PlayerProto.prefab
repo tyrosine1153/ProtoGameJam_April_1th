@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2592316314639518125}
   m_Layer: 0
   m_Name: PlayerProto
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,8 +48,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7558a0344a08a1b48a1a6e5c0cd8ebe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHp: 100
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
   speed: 5
   rollScale: 1000
+  bulletPrefab: {fileID: 7938469099397232761, guid: 3061290ada43a5d4b991e4f32ddd2561, type: 3}
 --- !u!95 &307144651252243960
 Animator:
   serializedVersion: 4

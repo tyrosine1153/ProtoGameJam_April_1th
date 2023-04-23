@@ -5,6 +5,16 @@ using Panda;
 
 public class DragonProto : Unit
 {
+    [SerializeField]
+    float runScale = 20;
+    [SerializeField]
+    float bodyDamage;
+    [SerializeField]
+    Collider2D skillTrigger;
+    [SerializeField]
+    float skillDamage;
+
+
     PlayerProto player;
     Vector2 inputVector;
 
@@ -25,15 +35,30 @@ public class DragonProto : Unit
     }
 
     [Task]
-    public void Grab(Vector2 InVector)
+    public bool IsDead()
     {
+        return CurrentHp <= 0;
+    }
 
+    [Task]
+    public void Grab()
+    {
+        animator.SetTrigger(StringRef.Instance.ID_Grab);
+    }
+    
+    [Task]
+    public void Run()
+    {
+        animator.SetTrigger(StringRef.Instance.ID_Run);
+        rigid.AddForce(inputVector * runScale);
     }
 
 
 
-    private void Start()
+    override protected void Start()
     {
+        base.Start();
+
         player = GameManager.Instance.Player;
 
         if (player == null) Debug.LogError("there's no player!");
@@ -42,5 +67,28 @@ public class DragonProto : Unit
     private void FixedUpdate()
     {
         Move(inputVector * Time.fixedDeltaTime * speed);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag(StringRef.Player))
+        {
+            collision.gameObject.GetComponent<Vulnerable>().TakeDamage(bodyDamage);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag(StringRef.Player))
+        {
+            collision.gameObject.GetComponent<Vulnerable>().TakeDamage(skillDamage);
+        }
+    }
+
+
+    // used by animation event
+    void EnableSkillTrigger(bool bEnable)
+    {
+        skillTrigger.enabled = bEnable;
     }
 }

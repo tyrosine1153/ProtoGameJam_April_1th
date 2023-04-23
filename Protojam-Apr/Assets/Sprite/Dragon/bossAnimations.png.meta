@@ -108,9 +108,9 @@ TextureImporter:
       name: bossAnimations_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1312
-        width: 256
+        x: 16
+        y: 2080
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -129,9 +129,9 @@ TextureImporter:
       name: bossAnimations_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1312
-        width: 256
+        x: 272
+        y: 2080
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -150,9 +150,9 @@ TextureImporter:
       name: bossAnimations_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1312
-        width: 256
+        x: 528
+        y: 2080
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -171,9 +171,9 @@ TextureImporter:
       name: bossAnimations_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1312
-        width: 256
+        x: 784
+        y: 2080
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,9 +192,9 @@ TextureImporter:
       name: bossAnimations_4
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1312
-        width: 256
+        x: 1040
+        y: 2080
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -213,9 +213,9 @@ TextureImporter:
       name: bossAnimations_5
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 1312
-        width: 256
+        x: 1296
+        y: 2080
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -234,9 +234,9 @@ TextureImporter:
       name: bossAnimations_6
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1312
-        width: 256
+        x: 1552
+        y: 2080
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -255,9 +255,9 @@ TextureImporter:
       name: bossAnimations_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1056
-        width: 256
+        x: 16
+        y: 1824
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -276,9 +276,9 @@ TextureImporter:
       name: bossAnimations_8
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1056
-        width: 256
+        x: 272
+        y: 1824
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -297,9 +297,9 @@ TextureImporter:
       name: bossAnimations_9
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1056
-        width: 256
+        x: 528
+        y: 1824
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -318,9 +318,9 @@ TextureImporter:
       name: bossAnimations_10
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1056
-        width: 256
+        x: 784
+        y: 1824
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -339,9 +339,9 @@ TextureImporter:
       name: bossAnimations_11
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1056
-        width: 256
+        x: 1040
+        y: 1824
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -360,9 +360,9 @@ TextureImporter:
       name: bossAnimations_12
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 1056
-        width: 256
+        x: 1296
+        y: 1824
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -381,9 +381,9 @@ TextureImporter:
       name: bossAnimations_13
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1056
-        width: 256
+        x: 16
+        y: 1568
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -402,9 +402,9 @@ TextureImporter:
       name: bossAnimations_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 800
-        width: 256
+        x: 272
+        y: 1568
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -423,9 +423,9 @@ TextureImporter:
       name: bossAnimations_15
       rect:
         serializedVersion: 2
-        x: 256
-        y: 800
-        width: 256
+        x: 528
+        y: 1568
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -444,9 +444,9 @@ TextureImporter:
       name: bossAnimations_16
       rect:
         serializedVersion: 2
-        x: 512
-        y: 800
-        width: 256
+        x: 784
+        y: 1568
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -465,9 +465,9 @@ TextureImporter:
       name: bossAnimations_17
       rect:
         serializedVersion: 2
-        x: 768
-        y: 800
-        width: 256
+        x: 1040
+        y: 1568
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -486,9 +486,9 @@ TextureImporter:
       name: bossAnimations_18
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 800
-        width: 256
+        x: 1296
+        y: 1568
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -507,9 +507,9 @@ TextureImporter:
       name: bossAnimations_19
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 800
-        width: 256
+        x: 1552
+        y: 1568
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -528,9 +528,9 @@ TextureImporter:
       name: bossAnimations_20
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 800
-        width: 256
+        x: 16
+        y: 1312
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -549,9 +549,9 @@ TextureImporter:
       name: bossAnimations_21
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 800
-        width: 256
+        x: 272
+        y: 1312
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -570,9 +570,9 @@ TextureImporter:
       name: bossAnimations_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 544
-        width: 256
+        x: 528
+        y: 1312
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -591,9 +591,9 @@ TextureImporter:
       name: bossAnimations_23
       rect:
         serializedVersion: 2
-        x: 256
-        y: 544
-        width: 256
+        x: 784
+        y: 1312
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -612,9 +612,9 @@ TextureImporter:
       name: bossAnimations_24
       rect:
         serializedVersion: 2
-        x: 512
-        y: 544
-        width: 256
+        x: 1040
+        y: 1312
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -633,9 +633,9 @@ TextureImporter:
       name: bossAnimations_25
       rect:
         serializedVersion: 2
-        x: 768
-        y: 544
-        width: 256
+        x: 1296
+        y: 1312
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -654,9 +654,9 @@ TextureImporter:
       name: bossAnimations_26
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 544
-        width: 256
+        x: 1552
+        y: 1312
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -675,9 +675,9 @@ TextureImporter:
       name: bossAnimations_27
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
-        width: 256
+        x: 1808
+        y: 1312
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -696,9 +696,9 @@ TextureImporter:
       name: bossAnimations_28
       rect:
         serializedVersion: 2
-        x: 256
-        y: 288
-        width: 256
+        x: 16
+        y: 1056
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -717,9 +717,9 @@ TextureImporter:
       name: bossAnimations_29
       rect:
         serializedVersion: 2
-        x: 512
-        y: 288
-        width: 256
+        x: 272
+        y: 1056
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -738,9 +738,9 @@ TextureImporter:
       name: bossAnimations_30
       rect:
         serializedVersion: 2
-        x: 768
-        y: 288
-        width: 256
+        x: 528
+        y: 1056
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -759,9 +759,9 @@ TextureImporter:
       name: bossAnimations_31
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 288
-        width: 256
+        x: 784
+        y: 1056
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -780,9 +780,9 @@ TextureImporter:
       name: bossAnimations_32
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 288
-        width: 256
+        x: 1040
+        y: 1056
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -801,9 +801,9 @@ TextureImporter:
       name: bossAnimations_33
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 288
-        width: 256
+        x: 16
+        y: 800
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -822,9 +822,9 @@ TextureImporter:
       name: bossAnimations_34
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 256
+        x: 272
+        y: 800
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -843,9 +843,9 @@ TextureImporter:
       name: bossAnimations_35
       rect:
         serializedVersion: 2
-        x: 256
-        y: 32
-        width: 256
+        x: 528
+        y: 800
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -864,9 +864,9 @@ TextureImporter:
       name: bossAnimations_36
       rect:
         serializedVersion: 2
-        x: 512
-        y: 32
-        width: 256
+        x: 784
+        y: 800
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -885,9 +885,9 @@ TextureImporter:
       name: bossAnimations_37
       rect:
         serializedVersion: 2
-        x: 768
-        y: 32
-        width: 256
+        x: 1040
+        y: 800
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -906,9 +906,9 @@ TextureImporter:
       name: bossAnimations_38
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 32
-        width: 256
+        x: 1296
+        y: 800
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -927,9 +927,9 @@ TextureImporter:
       name: bossAnimations_39
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 32
-        width: 256
+        x: 1552
+        y: 800
+        width: 192
         height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -940,6 +940,426 @@ TextureImporter:
       bones: []
       spriteID: cf879a1995b3eb247bbfe9a1d91dec21
       internalID: 1953942003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 544
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc67ef388695c744b013e704b08cdfe
+      internalID: 2068740555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_41
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 544
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8062d3e5ad5276c4a95928cc42f1d9ae
+      internalID: -1444891020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_42
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 544
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2f777843bc16948b41d66f86922bd5
+      internalID: -246316394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_43
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 544
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c762d0349041d041a484016cd86acc2
+      internalID: 1107063061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_44
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 544
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b61455bca58154fa9f4e4901f3eb8b
+      internalID: 1230224980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_45
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 544
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8863567360234ec4a8141106df691dc3
+      internalID: -1346222831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_46
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 544
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6428323a7cf73438bec0112afb80e4
+      internalID: 524467834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_47
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faf1df2c00acdd4f89092f4cb823568
+      internalID: -1016762329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_48
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca034c57ca38f343981479c7fcc76e4
+      internalID: 1558997729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_49
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b70468a980e6b4fb9741b6b74aef49
+      internalID: 1985436950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_50
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad2a942e7ffcfd4bb1faed67eaeda2f
+      internalID: -19255619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_51
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59482beb24f33d24995e126b6ef65532
+      internalID: -1852429392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_52
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13236d43623148544981cba5aace4c1d
+      internalID: 1940806309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_53
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bcab7b9b8ba1541aa736e1b3555a51
+      internalID: 1925099981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_54
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ca8b7838e335d47b39d560334f0127
+      internalID: 1333491415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_55
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 32
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac737f08e19857340a91719056c064c3
+      internalID: 1846994169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_56
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 32
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd268504da2e729468ab1826e9b3abe2
+      internalID: -1619641071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_57
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 32
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb5a8dc4082a4b4ca498243ed709fe1
+      internalID: 528261000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_58
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 32
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cdcc46fe2ccb943831c92d8adf8c68
+      internalID: 306030529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossAnimations_59
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 32
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b564197c76287942a241ab798ad1116
+      internalID: 92931270
       vertices: []
       indices: 
       edges: []
@@ -955,46 +1375,66 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bossAnimations_30: 503585677
+      bossAnimations_59: 92931270
+      bossAnimations_48: 1558997729
       bossAnimations_33: 1861828428
-      bossAnimations_23: 1955080384
       bossAnimations_13: 510379102
-      bossAnimations_35: -299488744
-      bossAnimations_39: 1953942003
+      bossAnimations_49: 1985436950
       bossAnimations_3: -1578194185
-      bossAnimations_14: 1053196847
-      bossAnimations_34: -492616032
+      bossAnimations_40: 2068740555
+      bossAnimations_57: 528261000
       bossAnimations_18: -705760534
-      bossAnimations_10: -173262077
-      bossAnimations_15: -1571872088
-      bossAnimations_21: -1812940708
       bossAnimations_12: 39065032
       bossAnimations_0: -1520829326
-      bossAnimations_26: -1055632917
+      bossAnimations_44: 1230224980
+      bossAnimations_56: -1619641071
+      bossAnimations_46: 524467834
+      bossAnimations_17: 1419956747
+      bossAnimations_27: 1287886495
+      bossAnimations_41: -1444891020
+      bossAnimations_5: 1461617658
+      bossAnimations_25: -1499332405
+      bossAnimations_38: 329423722
+      bossAnimations_39: 1953942003
+      bossAnimations_37: -1795632950
+      bossAnimations_28: 1483041538
+      bossAnimations_19: 1014192038
+      bossAnimations_35: -299488744
+      bossAnimations_4: -199665510
+      bossAnimations_11: -1906517227
+      bossAnimations_50: -19255619
+      bossAnimations_23: 1955080384
+      bossAnimations_52: 1940806309
+      bossAnimations_14: 1053196847
+      bossAnimations_43: 1107063061
+      bossAnimations_34: -492616032
+      bossAnimations_54: 1333491415
+      bossAnimations_10: -173262077
+      bossAnimations_15: -1571872088
+      bossAnimations_47: -1016762329
+      bossAnimations_53: 1925099981
+      bossAnimations_21: -1812940708
       bossAnimations_36: 1231656302
+      bossAnimations_26: -1055632917
       bossAnimations_8: -1444244469
+      bossAnimations_58: 306030529
       bossAnimations_31: -464216974
       bossAnimations_1: 690408363
       bossAnimations_22: -404314264
       bossAnimations_7: -396769081
       bossAnimations_6: 1633158573
       bossAnimations_16: -917954748
-      bossAnimations_17: 1419956747
       bossAnimations_29: -974475392
-      bossAnimations_27: 1287886495
+      bossAnimations_45: -1346222831
       bossAnimations_9: 1142840121
-      bossAnimations_5: 1461617658
-      bossAnimations_38: 329423722
-      bossAnimations_2: 1394290635
-      bossAnimations_25: -1499332405
       bossAnimations_20: -617185838
-      bossAnimations_37: -1795632950
-      bossAnimations_28: 1483041538
-      bossAnimations_19: 1014192038
+      bossAnimations_51: -1852429392
+      bossAnimations_2: 1394290635
       bossAnimations_32: 1916331767
-      bossAnimations_4: -199665510
+      bossAnimations_30: 503585677
       bossAnimations_24: -1238864642
-      bossAnimations_11: -1906517227
+      bossAnimations_55: 1846994169
+      bossAnimations_42: -246316394
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
