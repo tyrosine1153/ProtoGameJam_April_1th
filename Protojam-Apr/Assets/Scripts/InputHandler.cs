@@ -12,12 +12,12 @@ public class InputHandler : MonoBehaviour
     public IObservable<Vector2> Move => _moveSubject;
 
     [SerializeField] private InputAction pickAction;
-    private readonly Subject<Unit> _pickSubject = new Subject<Unit>();
-    public IObservable<Unit> Pick => _pickSubject;
+    private readonly Subject<UniRx.Unit> _pickSubject = new Subject<UniRx.Unit>();
+    public IObservable<UniRx.Unit> Pick => _pickSubject;
 
     [SerializeField] private InputAction restoreAction;
-    private readonly Subject<Unit> _restoreSubject = new Subject<Unit>();
-    public IObservable<Unit> Restore => _restoreSubject;  // Todo : 1.근처 돌맹이 체크 2.장전 바 맞추기(UI)
+    private readonly Subject<UniRx.Unit> _restoreSubject = new Subject<UniRx.Unit>();
+    public IObservable<UniRx.Unit> Restore => _restoreSubject;  // Todo : 1.근처 돌맹이 체크 2.장전 바 맞추기(UI)
 
     [SerializeField] private InputAction shootAction;
     private readonly Subject<Vector2> _shootSubject = new Subject<Vector2>();
@@ -73,12 +73,12 @@ public class InputHandler : MonoBehaviour
 
     public void OnPick(InputAction.CallbackContext context)
     {
-        _pickSubject.OnNext(Unit.Default);
+        _pickSubject.OnNext(UniRx.Unit.Default);
     }
 
     public void OnRestore(InputAction.CallbackContext context)
     {
-        _restoreSubject.OnNext(Unit.Default);
+        _restoreSubject.OnNext(UniRx.Unit.Default);
     }
 
     public void OnShoot(InputAction.CallbackContext context)

@@ -1,5 +1,7 @@
 public class GameManager : MonoSingleton<GameManager>
 {
+    public PlayerProto Player;
+
     // hp
     // boss hp
     // 드간다

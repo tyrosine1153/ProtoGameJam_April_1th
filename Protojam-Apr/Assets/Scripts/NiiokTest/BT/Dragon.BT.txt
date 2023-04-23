@@ -1,0 +1,12 @@
+tree("Root")
+	parallel
+		tree("Move")
+
+tree("Move")
+	sequence
+		Move(-1.0, -1.0)
+		Move(1.0, -1.0)
+		Move(0.0, 1.0)
+		Move(-1.0, 1.0)
+
+
