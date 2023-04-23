@@ -105,11 +105,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_idle_0
+      name: idle_f_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -126,11 +126,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_idle_1
+      name: idle_f_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -147,11 +147,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_idle_2
+      name: idle_f_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -168,11 +168,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_idle_3
+      name: idle_f_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -189,11 +189,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_idle_4
+      name: idle_f_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 96
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -210,11 +210,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_run_0
+      name: run_f_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -231,11 +231,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_run_1
+      name: run_f_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -252,11 +252,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_run_2
+      name: run_f_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -273,11 +273,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_run_3
+      name: run_f_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 64
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -294,11 +294,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_run_4
+      name: run_f_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 64
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -315,11 +315,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_shoot_0
+      name: shoot_f_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -336,11 +336,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_shoot_1
+      name: shoot_f_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 32
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -357,11 +357,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_shoot_2
+      name: shoot_f_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -382,7 +382,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -403,7 +403,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -424,7 +424,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -451,22 +451,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player_idle_2: -1696054387
+      run_f_2: 317313143
+      run_f_4: -1359357465
+      run_f_0: 506339689
+      player-Sheet_0: -1745163648
+      idle_f_1: 645987040
+      run_f_1: 541156225
+      shoot_f_0: 1246935174
       player_lay_1: 1496728583
-      player_idle_1: 645987040
-      player_run_1: 541156225
       player_lay_2: -1874413657
-      player_run_3: -1410666507
+      shoot_f_1: -847839856
+      shoot_f_2: -532006819
       player_lay_0: -719258363
-      player_run_0: 506339689
-      player_shoot_0: 1246935174
-      player_run_2: 317313143
-      player_idle_4: -1625755449
-      player_run_4: -1359357465
-      player_shoot_2: -532006819
-      player_idle_3: 34446936
-      player_idle_0: -379134600
-      player_shoot_1: -847839856
+      idle_f_4: -1625755449
+      idle_f_2: -1696054387
+      idle_f_3: 34446936
+      run_f_3: -1410666507
+      idle_f_0: -379134600
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
