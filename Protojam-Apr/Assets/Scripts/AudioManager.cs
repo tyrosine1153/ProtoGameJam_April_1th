@@ -11,9 +11,9 @@ using UnityEngine;
 /// </summary>
 public class AudioManager : MonoSingleton<AudioManager>
 {
+    [SerializeField] private BGMType currentBGMClip = BGMType.None;
     [SerializeField] private BGMClipsScriptableObject bgmClips;
     [SerializeField] private AudioSource bgmSource;
-    [SerializeField] private BGMType currentBGMClip = BGMType.None;
     public float BGMVolume
     {
         get => bgmSource.volume;
