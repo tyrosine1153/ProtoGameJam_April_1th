@@ -64,6 +64,13 @@ public class PlayerProto : Unit
         Move(inputVector.normalized * Time.fixedDeltaTime);
     }
 
+    protected override void Die()
+    {
+        base.Die();
+
+        inputVector = Vector2.zero;
+    }
+
     // used by animation event
     void ShootReservedBullet()
     {

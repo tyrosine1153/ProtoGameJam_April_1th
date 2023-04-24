@@ -26,6 +26,8 @@ public class DragonProto : Unit
     public void SetMoving(bool bEnable)
     {
         inputVector = bEnable ? (player.transform.position - transform.position).normalized : Vector2.zero;
+
+        ThisTask.Succeed();
     }
 
     [Task]
@@ -44,6 +46,8 @@ public class DragonProto : Unit
     public void Grab()
     {
         animator.SetTrigger(StringRef.Instance.ID_Grab);
+
+        ThisTask.Succeed();
     }
     
     [Task]
@@ -51,6 +55,8 @@ public class DragonProto : Unit
     {
         animator.SetTrigger(StringRef.Instance.ID_Run);
         rigid.AddForce(inputVector * runScale);
+
+        ThisTask.Succeed();
     }
 
 
@@ -60,8 +66,9 @@ public class DragonProto : Unit
         base.Start();
 
         player = GameManager.Instance.Player;
-
         if (player == null) Debug.LogError("there's no player!");
+
+        EnableSkillTrigger(0);
     }
 
     private void FixedUpdate()
@@ -87,8 +94,8 @@ public class DragonProto : Unit
 
 
     // used by animation event
-    void EnableSkillTrigger(bool bEnable)
+    void EnableSkillTrigger(int bEnable)
     {
-        skillTrigger.enabled = bEnable;
+        skillTrigger.gameObject.SetActive(0 < bEnable);
     }
 }

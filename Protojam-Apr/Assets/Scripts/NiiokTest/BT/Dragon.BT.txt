@@ -1,31 +1,36 @@
 tree("Root")
-	fallback
-		tree("Die")
-		tree("Grab")
-		random(9, 1)
-			tree("Move")
-			tree("Run")
+	parallel
+		tree("Move")
+		tree("Run")
 
 
-tree("Die")
-	sequence
-		IsDead()
-		SetMoving(false)
 
-tree("Grab")
-	sequence
-		IsPlayerNear(4.0)
-		SetMoving(false)
-		Grab()
-		Wait(0.02)
 
 tree("Move")
-	sequence
-		SetMoving(true)
-		Wait(0.05)
+	fallback
+		while IsDead()
+			SetMoving(false)
+		while
+			sequence
+				not IsDead()
+				IsPlayerNear(3.0)
+			sequence
+				SetMoving(false)
+				Grab()
+				Wait(0.5)
+		while
+			sequence
+				not IsDead()
+				not IsPlayerNear(3.0)
+			sequence
+				SetMoving(true)
+				Wait(0.05)
 
 
 tree("Run")
-	sequence
-		SetMoving(false)
-		Wait(0.02)
+	while not IsDead()
+		while not IsPlayerNear(8.0)
+			sequence
+				SetMoving(true)
+				Run()
+				Wait(1.0)

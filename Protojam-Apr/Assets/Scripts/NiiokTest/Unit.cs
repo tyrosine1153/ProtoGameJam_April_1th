@@ -20,12 +20,12 @@ public class Unit : Vulnerable
         transform.Translate(speed * inVector);
         animator.SetInteger(StringRef.Instance.ID_X, Mathf.CeilToInt(Mathf.Abs(inVector.x)) * (int)Mathf.Sign(inVector.x));
         animator.SetInteger(StringRef.Instance.ID_Y, Mathf.CeilToInt(Mathf.Abs(inVector.y)) * (int)Mathf.Sign(inVector.y));
-        animator.SetBool(StringRef.Instance.ID_SideMoving, Mathf.Abs(inVector.x) > Mathf.Abs(inVector.y));
-        if (inVector.x != 0)
-        {
-            // sprites are left oriented
+        bool bSideMoving = Mathf.Abs(inVector.x) > Mathf.Abs(inVector.y);
+        animator.SetBool(StringRef.Instance.ID_SideMoving, bSideMoving);
+        if (inVector.x != 0 && bSideMoving)
             spriteRenderer.flipX = inVector.x > 0;
-        }
+        else
+            spriteRenderer.flipX = false;
     }
 
     public override void TakeDamage(float InDamage)
