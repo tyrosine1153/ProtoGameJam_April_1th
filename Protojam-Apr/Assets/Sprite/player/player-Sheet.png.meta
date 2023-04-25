@@ -861,7 +861,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_20
+      name: idle_l_3
       rect:
         serializedVersion: 2
         x: 96
@@ -882,7 +882,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_21
+      name: idle_l_4
       rect:
         serializedVersion: 2
         x: 128
@@ -903,7 +903,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_22
+      name: run_l_0
       rect:
         serializedVersion: 2
         x: 0
@@ -924,7 +924,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_23
+      name: run_l_1
       rect:
         serializedVersion: 2
         x: 32
@@ -945,7 +945,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_24
+      name: run_l_2
       rect:
         serializedVersion: 2
         x: 64
@@ -966,7 +966,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_25
+      name: shoot_l_0
       rect:
         serializedVersion: 2
         x: 0
@@ -987,7 +987,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_26
+      name: shoot_l_1
       rect:
         serializedVersion: 2
         x: 32
@@ -1008,7 +1008,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_27
+      name: shoot_l_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1029,7 +1029,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_28
+      name: roll_l_0
       rect:
         serializedVersion: 2
         x: 0
@@ -1050,7 +1050,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_29
+      name: roll_l_1
       rect:
         serializedVersion: 2
         x: 32
@@ -1071,7 +1071,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_30
+      name: roll_l_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1092,7 +1092,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_31
+      name: roll_l_3
       rect:
         serializedVersion: 2
         x: 96
@@ -1113,7 +1113,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_32
+      name: roll_l_4
       rect:
         serializedVersion: 2
         x: 128
@@ -1134,7 +1134,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_33
+      name: roll_l_5
       rect:
         serializedVersion: 2
         x: 160
@@ -1155,7 +1155,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_34
+      name: roll_l_6
       rect:
         serializedVersion: 2
         x: 192
@@ -1176,7 +1176,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_35
+      name: roll_l_7
       rect:
         serializedVersion: 2
         x: 224
@@ -1281,7 +1281,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_40
+      name: idle_b_0
       rect:
         serializedVersion: 2
         x: 0
@@ -1302,7 +1302,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_41
+      name: idle_b_1
       rect:
         serializedVersion: 2
         x: 32
@@ -1323,7 +1323,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_42
+      name: idle_b_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1344,7 +1344,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_43
+      name: idle_b_3
       rect:
         serializedVersion: 2
         x: 96
@@ -1365,7 +1365,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_44
+      name: idle_b_4
       rect:
         serializedVersion: 2
         x: 128
@@ -1386,7 +1386,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_45
+      name: run_b_0
       rect:
         serializedVersion: 2
         x: 0
@@ -1407,7 +1407,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_46
+      name: run_b_1
       rect:
         serializedVersion: 2
         x: 32
@@ -1428,7 +1428,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_47
+      name: run_b_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1449,7 +1449,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_48
+      name: run_b_3
       rect:
         serializedVersion: 2
         x: 96
@@ -1470,7 +1470,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_49
+      name: run_b_4
       rect:
         serializedVersion: 2
         x: 128
@@ -1491,7 +1491,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_50
+      name: run_b_5
       rect:
         serializedVersion: 2
         x: 160
@@ -1512,7 +1512,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_51
+      name: shoot_b_0
       rect:
         serializedVersion: 2
         x: 0
@@ -1533,7 +1533,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_52
+      name: shoot_b_1
       rect:
         serializedVersion: 2
         x: 32
@@ -1554,7 +1554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_53
+      name: shoot_b_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1575,7 +1575,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_54
+      name: roll_b_0
       rect:
         serializedVersion: 2
         x: 0
@@ -1596,7 +1596,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_55
+      name: roll_b_1
       rect:
         serializedVersion: 2
         x: 32
@@ -1617,7 +1617,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_56
+      name: roll_b_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1638,7 +1638,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_57
+      name: roll_b_3
       rect:
         serializedVersion: 2
         x: 96
@@ -1659,7 +1659,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_58
+      name: roll_b_4
       rect:
         serializedVersion: 2
         x: 128
@@ -1680,7 +1680,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_59
+      name: roll_b_5
       rect:
         serializedVersion: 2
         x: 160
@@ -1701,7 +1701,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_60
+      name: roll_b_6
       rect:
         serializedVersion: 2
         x: 192
@@ -1722,7 +1722,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-Sheet_61
+      name: roll_b_7
       rect:
         serializedVersion: 2
         x: 224
@@ -1837,88 +1837,88 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player-Sheet_28: 29410836
-      player-Sheet_29: 382739238
-      player-Sheet_37: 855664909
-      player-Sheet_33: 1814051210
+      player_lay_6: 1677085554
+      idle_b_0: -318626907
       run_f_4: -1359357465
       roll_f_7: 934120525
-      player-Sheet_52: 1526338442
-      player_lay_6: 1677085554
+      run_b_4: 127395439
+      shoot_b_2: -1515063867
       player-Sheet_36: 708291193
-      player-Sheet_24: -573696715
-      player-Sheet_26: 742634637
-      player-Sheet_56: -1653149695
-      player-Sheet_44: 169519406
+      idle_b_1: 1144558086
+      run_l_0: -958715481
       roll_f_5: -1364748257
       roll_f_6: -508178038
-      player-Sheet_22: 1786701890
+      shoot_b_0: 1020214521
       player_lay_1: 1496728583
       idle_l_2: 12402443
-      player-Sheet_58: -1718581820
-      player-Sheet_45: -320720058
+      idle_b_3: 1703350994
+      run_b_1: 86031733
       shoot_f_2: -532006819
-      player-Sheet_31: 1475195723
-      player-Sheet_34: 1624285162
-      player-Sheet_54: 186684990
-      player-Sheet_41: 82375762
-      idle_l_1: 1598943786
+      shoot_b_1: 592814193
+      roll_l_4: 2108772066
+      shoot_l_0: -570358497
       player_lay_4: -1085654199
-      player-Sheet_20: -334272382
-      player-Sheet_25: -1011148250
-      player-Sheet_23: -355133726
-      player-Sheet_57: -1684203284
+      roll_l_5: -1343930042
+      idle_l_3: -429524446
+      run_l_1: 825325612
       idle_l_0: 161752049
+      roll_b_1: 1457332167
+      roll_b_7: -288920283
       roll_f_4: -24375879
       player-Sheet_10: -512626795
       idle_f_3: 34446936
-      player-Sheet_49: -925441123
+      roll_l_7: -335727300
+      roll_b_6: 1102004094
       roll_f_0: -166909163
       roll_f_3: 375494510
-      player-Sheet_32: 289488113
-      player-Sheet_35: -1760690431
-      player-Sheet_42: -787706084
+      roll_b_4: -12316314
+      run_b_5: -1130242022
+      run_b_3: 522554556
+      shoot_l_2: -2069702126
       run_f_2: 317313143
-      player-Sheet_48: 847499159
+      shoot_l_1: -2043765947
       run_f_0: 506339689
-      player-Sheet_21: 1985578317
+      roll_b_2: -1815543582
       player-Sheet_11: -873293522
       player-Sheet_62: -1802658439
+      roll_l_6: -1810359663
       idle_f_1: 645987040
-      player-Sheet_30: 2111930922
       player-Sheet_12: -1996781942
       run_f_1: 541156225
       shoot_f_0: 1246935174
-      player-Sheet_53: -229656809
       player_lay_5: 1308935307
-      player-Sheet_50: 1221344122
+      roll_b_3: 1940847827
+      roll_l_3: -1250404979
       player_lay_2: -1874413657
       shoot_f_1: -847839856
-      player-Sheet_46: -1861432186
+      idle_l_4: -1591734273
       player_lay_0: -719258363
       idle_f_4: -1625755449
-      player-Sheet_51: 1034835412
       player-Sheet_63: -131268207
-      player-Sheet_55: 1663295144
+      roll_l_0: 230492535
+      run_b_2: -703093986
+      roll_b_5: 604632796
       roll_f_2: -1028225268
       player_lay_3: -110609735
-      player-Sheet_27: 623058197
+      roll_l_2: -2035970780
+      roll_b_0: 755632064
       player-Sheet_9: 1444780759
       run_f_5: -1364748257
       idle_f_2: -1696054387
       roll_f_1: 193818986
-      player-Sheet_59: -1296425059
-      player-Sheet_47: 801589229
+      idle_b_4: -191746724
+      run_l_2: 479776257
       player-Sheet_65: 906122043
+      run_b_0: -1165522059
       run_f_3: -1410666507
-      player-Sheet_61: -1094053407
+      roll_l_1: -845476798
       player-Sheet_38: -442735167
-      player-Sheet_60: 1384230498
       player-Sheet_64: 2001461299
-      player-Sheet_39: -105321051
-      player-Sheet_40: -2014452369
       idle_f_0: -379134600
-      player-Sheet_43: -1824057854
+      player-Sheet_37: 855664909
+      player-Sheet_39: -105321051
+      idle_l_1: 1598943786
+      idle_b_2: 749488304
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

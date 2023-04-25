@@ -13,14 +13,21 @@ public class Vulnerable : MonoBehaviour
     {
         protected set
         {
-            currentHp = Mathf.Max(value, 0);
-            if(currentHp <= 0)
+            if (IsAlive())
             {
-                Die();
+                currentHp = Mathf.Max(value, 0);
+                OnHurt.Invoke();
+                if (currentHp == 0)
+                {
+                    OnDead.Invoke();
+                    Debug.Log($"{gameObject.name} has died!");
+                }
             }
         }
         get => currentHp;
     }
+
+    public bool IsAlive() { return CurrentHp > 0; }
 
     virtual public void TakeDamage(float InDamage)
     {
@@ -29,13 +36,8 @@ public class Vulnerable : MonoBehaviour
     }
 
     public UnityEvent OnDead;
+    public UnityEvent OnHurt;
 
-    virtual protected void Die() 
-    {
-        OnDead.Invoke();
-
-        Debug.Log($"{gameObject.name} has died!");
-    }
 
     virtual protected void Awake()
     {

@@ -54,9 +54,12 @@ MonoBehaviour:
   OnDead:
     m_PersistentCalls:
       m_Calls: []
+  OnHurt:
+    m_PersistentCalls:
+      m_Calls: []
   speed: 2
-  runScale: 100
-  bodyDamage: 10
+  runScale: 20000
+  bodyDamage: 20
   skillTrigger: {fileID: 6200846651874473610}
   skillDamage: 20
 --- !u!212 &4251325495893593982

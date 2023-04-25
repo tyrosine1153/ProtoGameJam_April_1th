@@ -39,13 +39,13 @@ public class DragonProto : Unit
     [Task]
     public bool IsDead()
     {
-        return CurrentHp <= 0;
+        return !IsAlive();
     }
 
     [Task]
     public void Grab()
     {
-        animator.SetTrigger(StringRef.Instance.ID_Grab);
+        animator.SetBool(StringRef.Instance.ID_Grab, true);
 
         ThisTask.Succeed();
     }
@@ -53,7 +53,7 @@ public class DragonProto : Unit
     [Task]
     public void Run()
     {
-        animator.SetTrigger(StringRef.Instance.ID_Run);
+        animator.SetBool(StringRef.Instance.ID_Run, true);
         rigid.AddForce(inputVector * runScale);
 
         ThisTask.Succeed();
@@ -61,10 +61,8 @@ public class DragonProto : Unit
 
 
 
-    override protected void Start()
+    virtual protected void Start()
     {
-        base.Start();
-
         player = GameManager.Instance.Player;
         if (player == null) Debug.LogError("there's no player!");
 

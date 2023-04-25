@@ -18,14 +18,18 @@ public class PlayerProto : Unit
 
     public void Shoot(Vector2 inVector)
     {
+        if (animator.GetBool(StringRef.Instance.ID_Shoot)) return;
+
         reservedShoot = inVector;
-        animator.SetTrigger(StringRef.Instance.ID_Shoot);
+        animator.SetBool(StringRef.Instance.ID_Shoot, true);
     }
 
     public void Roll(Vector2 inVector)
     {
+        if (animator.GetBool(StringRef.Instance.ID_Roll)) return;
+
         rigid.AddForce(rollScale * inVector);
-        animator.SetTrigger(StringRef.Instance.ID_Roll);
+        animator.SetBool(StringRef.Instance.ID_Roll, true);
     }
 
 
@@ -36,13 +40,14 @@ public class PlayerProto : Unit
 
         bodyCollider = GetComponent<Collider2D>();
         GameManager.Instance.Player = this;
+        OnDead.AddListener(() => { inputVector = Vector2.zero; });
     }
 
     // Update is called once per frame
     void Update()
     {
         // input test
-        if (CurrentHp > 0)
+        if (IsAlive())
         {
             inputVector = new Vector2(Input.GetAxisRaw(StringRef.Horizontal), Input.GetAxisRaw(StringRef.Vertical));
 
@@ -62,13 +67,6 @@ public class PlayerProto : Unit
     void FixedUpdate()
     {
         Move(inputVector.normalized * Time.fixedDeltaTime);
-    }
-
-    protected override void Die()
-    {
-        base.Die();
-
-        inputVector = Vector2.zero;
     }
 
     // used by animation event

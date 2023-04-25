@@ -9,7 +9,7 @@ public class Unit : Vulnerable
     protected float speed;
 
     protected Rigidbody2D rigid;
-    
+
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
 
@@ -31,23 +31,16 @@ public class Unit : Vulnerable
     public override void TakeDamage(float InDamage)
     {
         base.TakeDamage(InDamage);
-
-        animator.SetTrigger(StringRef.Instance.ID_Hurt);
     }
 
-
-    protected override void Die()
+    override protected void Awake()
     {
-        base.Die();
+        base.Awake();
 
-        animator.SetTrigger(StringRef.Instance.ID_Die);
-    }
-
-    // Start is called before the first frame update
-    virtual protected void Start()
-    {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         animator = gameObject.GetComponent<Animator>();
+        OnDead.AddListener(() => { animator.SetBool(StringRef.Instance.ID_Die, true); });
+        OnHurt.AddListener(() => { animator.SetBool(StringRef.Instance.ID_Hurt, true); });
     }
 }
