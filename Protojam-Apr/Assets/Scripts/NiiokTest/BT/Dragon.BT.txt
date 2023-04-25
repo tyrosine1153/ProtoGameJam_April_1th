@@ -29,7 +29,10 @@ tree("Move")
 
 tree("Run")
 	while not IsDead()
-		while not IsPlayerNear(8.0)
+		while
+			sequence
+				not IsPlayerNear(8.0)
+				IsPlayerNear(10000.0)
 			sequence
 				SetMoving(true)
 				Run()

@@ -3,6 +3,7 @@ using UnityEngine;
 public class GameManager : MonoSingleton<GameManager>
 {
     public PlayerProto Player;
+    public DragonProto Dragon;
 
     // hp
     // boss hp

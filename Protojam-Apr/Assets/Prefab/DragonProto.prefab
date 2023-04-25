@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a296131298203144bad074d3554464a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 100
+  maxHp: 1000
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -58,10 +58,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   speed: 2
-  runScale: 20000
-  bodyDamage: 20
+  runScale: 30000
+  bodyDamage: 1
   skillTrigger: {fileID: 6200846651874473610}
-  skillDamage: 20
+  skillDamage: 1
 --- !u!212 &4251325495893593982
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -23,8 +23,15 @@ public class StateBlocker : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (state == TriggerState.Die)
-            animator.SetBool(StringRef.Instance.ID_Die, false);
+        switch(state)
+        {
+            case TriggerState.Die:
+                animator.SetBool(StringRef.Instance.ID_Die, false);
+                break;
+            case TriggerState.Hurt:
+                animator.SetBool(StringRef.Instance.ID_Hurt, false);
+                break;
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -40,9 +47,6 @@ public class StateBlocker : StateMachineBehaviour
 
         switch(state)
         {
-            case TriggerState.Hurt:
-                animator.SetBool(StringRef.Instance.ID_Hurt, false);
-                break;
             case TriggerState.Roll:
                 animator.SetBool(StringRef.Instance.ID_Roll, false);
                 break;

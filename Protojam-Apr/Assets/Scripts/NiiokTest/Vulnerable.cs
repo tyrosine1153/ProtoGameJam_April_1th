@@ -8,6 +8,8 @@ public class Vulnerable : MonoBehaviour
     [SerializeField]
     float maxHp = 100;
 
+    public float MaxHP { get => maxHp; }
+
     float currentHp;
     public float CurrentHp
     {

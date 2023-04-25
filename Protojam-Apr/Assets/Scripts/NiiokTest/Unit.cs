@@ -33,6 +33,11 @@ public class Unit : Vulnerable
         base.TakeDamage(InDamage);
     }
 
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
+
     override protected void Awake()
     {
         base.Awake();

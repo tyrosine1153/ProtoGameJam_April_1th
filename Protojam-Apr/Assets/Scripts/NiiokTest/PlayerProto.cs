@@ -69,6 +69,15 @@ public class PlayerProto : Unit
         Move(inputVector.normalized * Time.fixedDeltaTime);
     }
 
+    private void OnDestroy()
+    {
+        if (GameManager.Instance.Player == this)
+        {
+            GameManager.Instance.Player = null;
+        }
+    }
+
+
     // used by animation event
     void ShootReservedBullet()
     {

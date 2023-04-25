@@ -25,7 +25,10 @@ public class DragonProto : Unit
     [Task]
     public void SetMoving(bool bEnable)
     {
-        inputVector = bEnable ? (player.transform.position - transform.position).normalized : Vector2.zero;
+        if (player != null)
+            inputVector = bEnable ? (player.transform.position - transform.position).normalized : Vector2.zero;
+        else
+            inputVector = Vector2.zero;
 
         ThisTask.Succeed();
     }
@@ -33,7 +36,10 @@ public class DragonProto : Unit
     [Task]
     public bool IsPlayerNear(float InDistance)
     {
-        return (Vector2.Distance(gameObject.transform.position, player.transform.position) < InDistance);
+        if(player != null)
+            return (Vector2.Distance(gameObject.transform.position, player.transform.position) < InDistance);
+        else
+            return false;
     }
 
     [Task]
@@ -59,6 +65,13 @@ public class DragonProto : Unit
         ThisTask.Succeed();
     }
 
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        GameManager.Instance.Dragon = this;
+    }
 
 
     virtual protected void Start()
@@ -87,6 +100,14 @@ public class DragonProto : Unit
         if (collision.gameObject.CompareTag(StringRef.Player))
         {
             collision.gameObject.GetComponent<Vulnerable>().TakeDamage(skillDamage);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if(GameManager.Instance.Dragon == this)
+        {
+            GameManager.Instance.Dragon = null;
         }
     }
 
