@@ -15,6 +15,16 @@ public class Bullet : MonoBehaviour
     [SerializeField]
     float damage = 10;
 
+    private void Awake()
+    {
+        Invoke("DestroySelf", 5);
+    }
+
+    void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
+
     void FixedUpdate()
     {
         transform.Translate(Direction * speed * Time.fixedDeltaTime);

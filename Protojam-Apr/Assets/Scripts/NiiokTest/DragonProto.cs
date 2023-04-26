@@ -105,7 +105,7 @@ public class DragonProto : Unit
 
     private void OnDestroy()
     {
-        if(GameManager.Instance.Dragon == this)
+        if(GameManager.IsInitialized && GameManager.Instance.Dragon == this)
         {
             GameManager.Instance.Dragon = null;
         }

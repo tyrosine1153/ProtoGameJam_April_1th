@@ -71,7 +71,7 @@ public class PlayerProto : Unit
 
     private void OnDestroy()
     {
-        if (GameManager.Instance.Player == this)
+        if (GameManager.IsInitialized && GameManager.Instance.Player == this)
         {
             GameManager.Instance.Player = null;
         }
