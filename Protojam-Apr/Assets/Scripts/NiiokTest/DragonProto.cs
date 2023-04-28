@@ -68,6 +68,16 @@ public class DragonProto : Unit
 
     protected override void Awake()
     {
+        if (PlayerPrefs.HasKey(StringRef.BossHp))
+            maxHp = 0.1f * PlayerPrefs.GetInt(StringRef.BossHp);
+        else
+            PlayerPrefs.SetInt(StringRef.BossHp, Mathf.FloorToInt(maxHp * 10));
+
+        if (PlayerPrefs.HasKey(StringRef.BossSpeed))
+            speed = 0.1f * PlayerPrefs.GetInt(StringRef.BossSpeed);
+        else
+            PlayerPrefs.SetInt(StringRef.BossSpeed, Mathf.FloorToInt(speed * 10));
+
         base.Awake();
 
         GameManager.Instance.Dragon = this;
@@ -84,7 +94,7 @@ public class DragonProto : Unit
 
     private void FixedUpdate()
     {
-        Move(inputVector * Time.fixedDeltaTime * speed);
+        Move(inputVector * Time.fixedDeltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/NiiokTest/Title.unity
+    guid: fe36708d25ea81840a665a311de9bf0e
+  - enabled: 1
     path: Assets/Scenes/NiiokTest/BossProto.unity
     guid: ba40cae76d443eb4e94e9b57d9528595
   m_configObjects: {}

@@ -1,3 +1,5 @@
+using System;
+using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,6 +44,12 @@ public class StringRef : MonoSingleton<StringRef>
     public const string Player = "Player";
     public const string Enemy = "Enemy";
 
+    public const string Loop = "Loop";
+    public const string BossSpeed = "BossSpeed";
+    public const string BossHp = "BossHp";
+    public const string PlayerSpeed = "PlayerSpeed";
+    public const string PlayerHp = "PlayerHp";
+
 
     override protected void Awake()
     {
@@ -58,5 +66,19 @@ public class StringRef : MonoSingleton<StringRef>
 
         ID_Grab = Animator.StringToHash(ParameterGrab);
         ID_Run = Animator.StringToHash(ParameterRun);
+
+        //byte[] tempBytes;
+        //tempBytes = Encoding.ASCII.GetBytes(AES_KEY);
+        //Array.Resize(ref tempBytes, 256);
+        //AesKey = tempBytes;
+        
+        //tempBytes = Encoding.ASCII.GetBytes(AES_IV);
+        //Array.Resize(ref tempBytes, 256 / 8);
+        //AesIV = tempBytes;
     }
+
+    //public const string AES_KEY = "31jeLj2VO6GmwGoCCiCKMWBQ3phlwQ4XudomDHoi6tO4fSwjJueGPB6MoQf3Iui7nDuNnXhA22hbFr16AL7PgPPDfrWUsnT8ted3LmTPcuHx3qzQHFkw7k1QSu1avDbfgx1Epq1CAPnAQQ4WTEsolp7G5yIdc1oCa9zWY0HNfdJJstlaH9ALK9ovaOEdVvQCI7ae9UaUoCmI6nxNaxDCTKvMLSHptepqmU5vEv3VdPpjJeK9eQ4USRLvrQ4AYHQY";
+    //public byte[] AesKey { get; private set; }
+    //public const string AES_IV = "6iVZhQWekrq1lk2Gba0G74VMTTYq5XMW2I3GmJhAvK9WmwaAdY2tfV5aFP5Tex5NcZ12SZNYlEMiePjDRw8Qal4FMh42r7flgu7n1gr3KLA6DgIFwqDXtbtf5lQMG8aDdHQ9yjfTJEjFEVzTkeRKq18d8JR4PqBlCXgZM9bya7eP4yZkZDGY5LcKm7xzBjaFDUo6V3H1bJeVhKYakjdi8O4gVBhLLkl19tnCGpw2Ozs0GQzHI6pL0BufyfCoWhVt";
+    //public byte[] AesIV { get; private set; }
 }

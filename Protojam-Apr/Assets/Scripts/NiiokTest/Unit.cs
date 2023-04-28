@@ -24,8 +24,6 @@ public class Unit : Vulnerable
         animator.SetBool(StringRef.Instance.ID_SideMoving, bSideMoving);
         if (inVector.x != 0 && bSideMoving)
             spriteRenderer.flipX = inVector.x > 0;
-        else
-            spriteRenderer.flipX = false;
     }
 
     public override void TakeDamage(float InDamage)

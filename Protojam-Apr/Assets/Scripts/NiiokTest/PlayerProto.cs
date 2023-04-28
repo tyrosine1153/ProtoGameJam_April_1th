@@ -15,6 +15,7 @@ public class PlayerProto : Unit
     Vector2 reservedShoot;
 
     Collider2D bodyCollider;
+    Cinemachine.CinemachineImpulseSource impulseSource;
 
     public void Shoot(Vector2 inVector)
     {
@@ -36,11 +37,23 @@ public class PlayerProto : Unit
 
     override protected void Awake()
     {
+        if (PlayerPrefs.HasKey(StringRef.PlayerHp))
+            maxHp = 0.1f * PlayerPrefs.GetInt(StringRef.PlayerHp);
+        else
+            PlayerPrefs.SetInt(StringRef.PlayerHp, Mathf.FloorToInt(maxHp * 10));
+
+        if (PlayerPrefs.HasKey(StringRef.PlayerSpeed))
+            speed = 0.1f * PlayerPrefs.GetInt(StringRef.PlayerSpeed);
+        else
+            PlayerPrefs.SetInt(StringRef.PlayerSpeed, Mathf.FloorToInt(speed * 10));
+
         base.Awake();
 
         bodyCollider = GetComponent<Collider2D>();
+        impulseSource = GetComponent<Cinemachine.CinemachineImpulseSource>();
         GameManager.Instance.Player = this;
         OnDead.AddListener(() => { inputVector = Vector2.zero; });
+        OnHurt.AddListener(() => { impulseSource.GenerateImpulse(); });
     }
 
     // Update is called once per frame
@@ -51,7 +64,7 @@ public class PlayerProto : Unit
         {
             inputVector = new Vector2(Input.GetAxisRaw(StringRef.Horizontal), Input.GetAxisRaw(StringRef.Vertical));
 
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Space))
             {
                 Roll(inputVector);
             }

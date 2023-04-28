@@ -6,13 +6,10 @@ using UnityEngine.SceneManagement;
 public class Portal : MonoBehaviour
 {
     [SerializeField]
-    Collider2D trigger;
-    [SerializeField]
-    string sceneName;
+    string sceneToLoad;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var handle = SceneManager.LoadSceneAsync(sceneName);
-        //handle.
+        Fader.Instance.LoadScene(sceneToLoad);
     }
 }

@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: SFXClips
   m_EditorClassIdentifier: 
   list:
-    elements: []
+    elements:
+    - type: 0
+      value: {fileID: 0}
+    - type: 0
+      value: {fileID: 0}

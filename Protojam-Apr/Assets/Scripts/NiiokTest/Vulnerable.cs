@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Vulnerable : MonoBehaviour
 {
     [SerializeField]
-    float maxHp = 100;
+    protected float maxHp = 100;
 
     public float MaxHP { get => maxHp; }
 

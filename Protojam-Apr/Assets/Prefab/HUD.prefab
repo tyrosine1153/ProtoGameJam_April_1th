@@ -333,6 +333,8 @@ MonoBehaviour:
   playerHpBar: {fileID: 2083179866089687953}
   winText: {fileID: 9206597656668684388}
   loseText: {fileID: 6262238493346899975}
+  sceneToLoad: Title
+  secondTillTitle: 5
 --- !u!1 &4622080939697092791
 GameObject:
   m_ObjectHideFlags: 0

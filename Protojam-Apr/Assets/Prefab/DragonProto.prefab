@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4251325495893593982}
   - component: {fileID: 4251325495893593969}
   - component: {fileID: 4251325495893593968}
-  - component: {fileID: 1352890036924269693}
+  - component: {fileID: 5948278835754806300}
   - component: {fileID: 5218879788984552583}
   m_Layer: 0
   m_Name: DragonProto
@@ -57,7 +57,7 @@ MonoBehaviour:
   OnHurt:
     m_PersistentCalls:
       m_Calls: []
-  speed: 2
+  speed: 5
   runScale: 30000
   bodyDamage: 1
   skillTrigger: {fileID: 6200846651874473610}
@@ -155,8 +155,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &1352890036924269693
-BoxCollider2D:
+--- !u!58 &5948278835754806300
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -169,18 +169,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.0416667, y: 3.9166667}
-    newSize: {x: 11.1875, y: 6.9375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 3}
-  m_EdgeRadius: 0
+  m_Radius: 1.5
 --- !u!114 &5218879788984552583
 MonoBehaviour:
   m_ObjectHideFlags: 0

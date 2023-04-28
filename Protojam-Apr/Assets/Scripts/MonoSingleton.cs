@@ -7,7 +7,8 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
 {
-    public bool dontDestroyOnLoad;
+    [SerializeField]
+    bool dontDestroyOnLoad;
 
     private static T _instance;
     private static object _syncRoot = new object();
@@ -36,6 +37,8 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
 
             if (!IsInitialized)
             {
+                Debug.LogWarning($"couldn't find mono singleton : {typeof(T).Name}");
+
                 var go = new GameObject(typeof(T).FullName);
                 _instance = go.AddComponent<T>();
             }
@@ -46,7 +49,7 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
     {
         if (IsInitialized)
         {
-            Debug.LogError(GetType().Name + " Singleton class is already created.");
+            Debug.LogWarning(GetType().Name + " Singleton class is already created.");
             Destroy(gameObject);
             return;
         }
@@ -55,7 +58,8 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
 
         if (dontDestroyOnLoad)
         {
-            DontDestroyOnLoad(this);
+            transform.SetParent(null);
+            DontDestroyOnLoad(gameObject);
         }
     }
 
