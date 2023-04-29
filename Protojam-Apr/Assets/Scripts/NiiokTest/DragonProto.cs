@@ -68,15 +68,8 @@ public class DragonProto : Unit
 
     protected override void Awake()
     {
-        if (PlayerPrefs.HasKey(StringRef.BossHp))
-            maxHp = 0.1f * PlayerPrefs.GetInt(StringRef.BossHp);
-        else
-            PlayerPrefs.SetInt(StringRef.BossHp, Mathf.FloorToInt(maxHp * 10));
-
-        if (PlayerPrefs.HasKey(StringRef.BossSpeed))
-            speed = 0.1f * PlayerPrefs.GetInt(StringRef.BossSpeed);
-        else
-            PlayerPrefs.SetInt(StringRef.BossSpeed, Mathf.FloorToInt(speed * 10));
+        if (PlayerPrefs.HasKey(StringRef.Ascend))
+            speed += PlayerPrefs.GetInt(StringRef.Ascend);
 
         base.Awake();
 

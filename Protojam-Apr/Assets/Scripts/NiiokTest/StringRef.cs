@@ -45,10 +45,7 @@ public class StringRef : MonoSingleton<StringRef>
     public const string Enemy = "Enemy";
 
     public const string Loop = "Loop";
-    public const string BossSpeed = "BossSpeed";
-    public const string BossHp = "BossHp";
-    public const string PlayerSpeed = "PlayerSpeed";
-    public const string PlayerHp = "PlayerHp";
+    public const string Ascend = "Ascend";
 
 
     override protected void Awake()

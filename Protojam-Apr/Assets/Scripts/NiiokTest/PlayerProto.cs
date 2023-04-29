@@ -19,7 +19,9 @@ public class PlayerProto : Unit
 
     public void Shoot(Vector2 inVector)
     {
-        if (animator.GetBool(StringRef.Instance.ID_Shoot)) return;
+        if (animator.GetBool(StringRef.Instance.ID_Shoot) ||
+            animator.GetBool(StringRef.Instance.ID_Roll))
+            return;
 
         reservedShoot = inVector;
         animator.SetBool(StringRef.Instance.ID_Shoot, true);
@@ -37,15 +39,8 @@ public class PlayerProto : Unit
 
     override protected void Awake()
     {
-        if (PlayerPrefs.HasKey(StringRef.PlayerHp))
-            maxHp = 0.1f * PlayerPrefs.GetInt(StringRef.PlayerHp);
-        else
-            PlayerPrefs.SetInt(StringRef.PlayerHp, Mathf.FloorToInt(maxHp * 10));
-
-        if (PlayerPrefs.HasKey(StringRef.PlayerSpeed))
-            speed = 0.1f * PlayerPrefs.GetInt(StringRef.PlayerSpeed);
-        else
-            PlayerPrefs.SetInt(StringRef.PlayerSpeed, Mathf.FloorToInt(speed * 10));
+        if (PlayerPrefs.HasKey(StringRef.Ascend))
+            speed += PlayerPrefs.GetInt(StringRef.Ascend);
 
         base.Awake();
 
@@ -69,7 +64,7 @@ public class PlayerProto : Unit
                 Roll(inputVector);
             }
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButton(0))
             {
                 Shoot(GameManager.Instance.GetMousePosition() - new Vector2(transform.position.x, transform.position.y));
             }

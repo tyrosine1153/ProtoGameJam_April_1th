@@ -54,17 +54,24 @@ public class HUD : MonoBehaviour
     void ShowWin()
     {
         int loopTime = 1;
-        if(PlayerPrefs.HasKey(StringRef.Loop))
+        if (PlayerPrefs.HasKey(StringRef.Loop))
         {
             //byte[] ba = Encoding.ASCII.GetBytes(PlayerPrefs.GetString(StringRef.Loop));
             //loopTime = AesExample.DecryptStringFromBytes_Aes(ba, StringRef.Instance.AesKey, StringRef.Instance.AesIV);
             loopTime = PlayerPrefs.GetInt(StringRef.Loop);
         }
 
+        int ascend = 0;
+        if (PlayerPrefs.HasKey(StringRef.Ascend))
+        {
+            ascend = PlayerPrefs.GetInt(StringRef.Ascend);
+        }
+
         winText.gameObject.SetActive(true);
-        winText.text = $"Succeed\nin the {AddOrdinal(loopTime)} life";
+        winText.text = $"{AddOrdinal(++ascend)} Succeed\nin the {AddOrdinal(loopTime)} life";
 
         PlayerPrefs.DeleteKey(StringRef.Loop);
+        PlayerPrefs.SetInt(StringRef.Ascend, ascend);
 
         Invoke("GoToTitle", secondTillTitle);
     }
@@ -83,7 +90,7 @@ public class HUD : MonoBehaviour
 
         //byte[] next_ba = AesExample.EncryptStringToBytes_Aes((loopTime + 1).ToString(), StringRef.Instance.AesKey, StringRef.Instance.AesIV);
         //PlayerPrefs.SetString(StringRef.Loop, Encoding.ASCII.GetString(next_ba));
-        PlayerPrefs.SetInt(StringRef.Loop, loopTime + 1);
+        PlayerPrefs.SetInt(StringRef.Loop, ++loopTime);
 
         Invoke("GoToTitle", secondTillTitle);
     }
